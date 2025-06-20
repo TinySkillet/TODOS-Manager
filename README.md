@@ -41,19 +41,22 @@ A modern, full‑stack TODO application built with Next.js, TypeScript, Prisma, 
    - Set your DATABASE_URL variable in the .env file.
 
    ```bash
-   npm install
+   DATABASE_URL="postgresql://USER:PASSWORD@127.0.0.1:5432/DBNAME"
    ```
 
 4. **Run Migrations**
 
-   Install prisma first.
+   Make sure you have prisma installed.
 
    ```bash
    npx prisma migrate dev --name init
    ```
 
-   - Configure your PostgreSQL database, I used docker to set it up.
-   - Set your DATABASE_URL variable in the .env file.
+   You need to generate prisma client as well.
+
+   ```bash
+   npx prisma generate client
+   ```
 
 5. **Run the development server**:
 
