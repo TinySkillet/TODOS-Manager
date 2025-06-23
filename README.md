@@ -39,6 +39,7 @@ A modern, full‑stack TODO application built with Next.js, TypeScript, Prisma, 
 
    - Configure your PostgreSQL database, I used docker to set it up.
    - Set your DATABASE_URL variable in the .env file.
+   - These will be the same credentials used in docker-compose file.
 
    ```bash
    DATABASE_URL="postgresql://USER:PASSWORD@127.0.0.1:5432/DBNAME"

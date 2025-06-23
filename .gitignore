@@ -10,8 +10,6 @@
 !.yarn/releases
 !.yarn/versions
 
-docker-compose.yaml
-
 # testing
 /coverage
 
